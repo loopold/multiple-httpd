@@ -1,7 +1,7 @@
 # Multiple HTTP demo with Ruby
 
 A simple Ruby script that runs independent instances of the web server 
-in Linux environment.
+in Linux environment. Servers are listening on ports 5001 and above.
 
 
 ## Setup
@@ -28,7 +28,7 @@ $ cd multiple-httpd
 
 ## Launch
 Here is exaple for start 5 instances. The parameter in square brackets defines 
-the number of instances that we want to run 
+the number of instances that we want to run:
 ```sh
 $ rake start_http_servers[5]
 ```
@@ -41,7 +41,7 @@ in `.zshrc`
 
 
 ## Verify
-Servers listen on ports starting from port 5001. You can verify it with `curl` command
+Servers are listening on ports 5001 and above. You can verify it with `curl` command
 in terminal.
 ```sh
 $ curl http://localhost:500\[1-5\]
