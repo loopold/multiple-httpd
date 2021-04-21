@@ -1,4 +1,6 @@
 # http_server.rb
+$stdout.reopen("out.log", "w")
+$stderr.reopen("err.log", "w")
 require 'socket'
 require 'date'
 
